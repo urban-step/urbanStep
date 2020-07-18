@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".fragments.AddSuggestionFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_ward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/tv_select_ward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/select_ward_suggestion"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_view"
+                    android:layout_toRightOf="@+id/tv_select_ward"
+                    android:background="@color/colorGray"
+                    android:padding="5dp"
+                    android:text="Naraina"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_select_ward"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:gravity="center"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_suggestion_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_desc"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="-64dp"
+                android:layout_marginRight="25dp"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_black_border"
+                    android:gravity="start"
+                    android:hint="@string/hint_address"
+                    android:lines="4"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:gravity="start"
+                    android:hint="Suggestion"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:gravity="start"
+                    android:hint="@string/hint_detail_desc"
+                    android:lines="4"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/upload_image"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/photo_2"
+                        android:gravity="center"
+                        android:text="@string/image_1"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/photo_2"
+                        android:gravity="center"
+                        android:text="@string/image_2"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/photo_2"
+                        android:gravity="center"
+                        android:text="@string/image_3"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/submit"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_recent_suggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_suggestion_detail"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorGray"
+                android:drawableLeft="@drawable/clock"
+                android:drawablePadding="5dp"
+                android:padding="3dp"
+                android:text="@string/recent_suggestion"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_recent_suggestion"
+                android:layout_marginTop="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

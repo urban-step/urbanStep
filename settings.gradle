@@ -1,0 +1,1 @@
+include ':app', ':library', ':imagelib', 'MapmyIndia_SDK_v6.7.0'

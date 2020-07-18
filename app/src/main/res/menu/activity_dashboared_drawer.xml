@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/nav_home" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/nav_dashboard" />
+
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/profile"
+            android:title="@string/nav_my_profile" />
+
+        <item
+            android:id="@+id/nav_grievance"
+            android:icon="@drawable/grievance"
+            android:title="Past Grievance" />
+
+        <item
+            android:id="@+id/nav_suggestion"
+            android:icon="@drawable/suggestion"
+            android:title="Past Suggestion" />
+
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback"
+            android:title="Past Feedback" />
+
+        <item
+            android:id="@+id/nav_query"
+            android:icon="@drawable/query"
+            android:title="Past Query" />
+
+        <item
+            android:id="@+id/nav_update_us"
+            android:icon="@drawable/nav_update"
+            android:title="Past Update" />
+
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/discussion"
+            android:title="Discussion Forum" />
+
+        <item
+            android:id="@+id/nav_ongoing_project"
+            android:icon="@drawable/ongoing"
+            android:title="@string/nav_ongoing_project" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="@string/contact" />
+     <!--   <item
+            android:id="@+id/nav_emergency_contact"
+            android:icon="@drawable/emergency"
+            android:title="@string/nav_emergency_contact" />-->
+
+        <item
+            android:id="@+id/nav_privacy_policy"
+            android:icon="@drawable/privacy"
+            android:title="@string/nav_privacy_policy" />
+
+        <item
+            android:id="@+id/nav_term_condition"
+            android:icon="@drawable/terms"
+            android:title="@string/nav_term_condition" />
+
+      <!--  <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/faq"
+            android:title="@string/nav_faq" />
+-->
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/faq"
+            android:title="@string/logout" />
+
+
+    </group>
+</menu>
+

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RegisterFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="220dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_logo"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/register"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/select_head"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_sub_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/select_sub_head"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/username"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/email"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/password"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/lock"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/confirm_password"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/fullname"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_resident_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/placeholder"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/residential_address"
+                    android:lines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_work_office"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/placeholder"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/work_office"
+                    android:lines="3"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+
+                <EditText
+                    android:id="@+id/edt_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/country"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/country"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/state"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/state"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/ic_mobile"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/mobile_number"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+
+                <EditText
+                    android:id="@+id/edt_organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/organization"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/organization"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/edt_designation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_black_border"
+                    android:drawableLeft="@drawable/designatio"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="@string/designation"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_accent_color"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/sign_up"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_already_registered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/already_login"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="19sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/progress_bar" />
+
+</RelativeLayout>

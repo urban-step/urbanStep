@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_new_development"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/from_stilts"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_from_stilts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/from_stilts"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/from_basement"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_from_basement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/from_basement"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/total_no_of_floor"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_total_no_of_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/total_no_of_floor"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_addition_of_floors"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/existing_floors"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_existing_floors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/existing_floors"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/new_floors_added"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_new_floors_added"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/new_floors_added"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_yes_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/rb_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorWhite"
+            android:padding="10dp"
+            android:text="Yes"
+            android:textColor="@color/colorWhite" />
+
+        <RadioButton
+            android:id="@+id/rb_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorWhite"
+            android:padding="10dp"
+            android:text="No"
+            android:textColor="@color/colorWhite" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/ll_generation_waste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/name_of_the_industry"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_name_of_the_industry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/name_of_the_industry"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:text="@string/address"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/edt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/colorGray"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:hint="@string/address"
+                android:padding="4dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/tv_zone_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+        android:text="1"
+        android:textColor="@color/colorBlack"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_zone_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.1"
+        android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+        android:text="ABC"
+        android:textColor="@color/colorAccent"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/tv_map_legend"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_weight="0.3"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+        android:gravity="center_horizontal"
+        android:paddingLeft="3dp"
+        android:paddingTop="1dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="1dp"
+        android:text="View"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp" />
+
+</LinearLayout>

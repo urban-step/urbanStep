@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.wfl.autolooppager.AutoLoopPager
+            android:id="@+id/autoPager"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+        <!--  <ImageView
+              android:id="@+id/autoPager"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:scaleType="centerCrop"
+              android:src="@drawable/banner_1" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autoPager"
+            android:orientation="vertical">
+
+            <!--  <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:visibility="gone"
+                  android:weightSum="4">
+
+                  <TextView
+                      android:id="@+id/tv_ndmc"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:background="@drawable/selector_home_tab"
+                      android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="NDMC"
+                      android:textColor="@drawable/selector_text"
+                      android:textSize="16sp" />
+
+                  <TextView
+                      android:id="@+id/tv_sdmc"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/selector_home_tab"
+                      android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="SDMC"
+                      android:textColor="@drawable/selector_text"
+                      android:textSize="16sp" />
+
+                  <TextView
+                      android:id="@+id/tv_edmc"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/selector_home_tab"
+                      android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="EDMC"
+                      android:textColor="@drawable/selector_text"
+                      android:textSize="16sp" />
+
+                  <TextView
+                      android:id="@+id/tv_cdmc"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="5dp"
+                      android:layout_weight="1"
+                      android:background="@drawable/selector_home_tab"
+                      android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                      android:gravity="center"
+                      android:padding="5dp"
+                      android:text="CDMC"
+                      android:textColor="@drawable/selector_text"
+                      android:textSize="16sp" />
+
+              </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGray"
+                android:padding="10dp"
+                android:text="@string/salient_feature"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:padding="10dp"
+                android:text="Detailed information at the ward level"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone" />
+
+
+            <!--   <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                   android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                   android:textColor="@color/colorBlack"
+                   android:textSize="12sp" />-->
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/webview_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_detail"
+            android:layout_below="@id/autoPager" />
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_know_area"
+            android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+            android:gravity="start|left"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Urban Step is a Stakeholders' platform for interactions with various organisation related to planning and development at the ward level. \n This enable platform stakeholders \n\ti) To know their opinions,to provide the requirements,to find suggestions and feedback on the various wards plans. \n\tii) Better administration will have to bridge the gap between people and government agencies."
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_know_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_say_something"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/know_your_area"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_say_something"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/say_something"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_select_ward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_select_ward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+            android:text="@string/select_ward"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_view"
+            android:layout_toRightOf="@+id/tv_select_ward"
+            android:background="@color/colorGray"
+            android:padding="5dp"
+            android:text="Naraina"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="#6f3647"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="View"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/progress_bar" />
+
+</RelativeLayout>

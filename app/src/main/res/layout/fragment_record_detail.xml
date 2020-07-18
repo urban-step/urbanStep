@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".fragments.RecordDetailFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_about_us" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="175dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_about_us" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_images"
+        android:layout_marginTop="10dp"
+        android:gravity="start"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Erat velit scelerisque in dictum non consectetur a erat. Enim diam vulputate ut pharetra sit amet aliquam id diam. Ut sem viverra aliquet eget. Pharetra et ultrices neque ornare aenean euismod elementum nisi quis. Diam sit amet nisl suscipit adipiscing bibendum. Mauris a diam maecenas sed enim ut sem viverra aliquet. Eget duis at tellus at urna. Diam quis enim lobortis scelerisque fermentum dui. Leo in vitae turpis massa. Aliquet bibendum enim facilisis gravida neque. Molestie nunc non blandit massa. Turpis massa sed elementum tempus egestas sed sed. Ultrices vitae auctor eu augue."
+        android:textSize="13sp" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AboutUsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_about_us" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_banner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus fermentum dapibus. Nunc in justo nec erat euismod venenatis. In orci odio, vestibulum eget eros vel, pellentesque sodales magna. Ut imperdiet magna non arcu vulputate facilisis. Ut et felis sollicitudin, convallis dui iaculis, aliquet ante. Maecenas tincidunt, sapien eget sodales imperdiet, elit mauris fringilla metus, id viverra erat felis vel nibh. Morbi ut vulputate lectus, eget lobortis neque. Donec eget tortor et nunc pharetra feugiat sed eget nisi. Integer vestibulum risus mauris, et fringilla metus interdum quis. Pellentesque viverra luctus eleifend. Aliquam dignissim semper eleifend. Ut ut metus ex. Maecenas ullamcorper lacus a lectus bibendum, id malesuada ligula consequat. Suspendisse potenti. Donec eu nisl quis purus porta mollis quis in felis. Fusce a nibh ante.
+
+Quisque porttitor eleifend finibus. In sit amet interdum dui. Maecenas purus erat, porttitor et rutrum vitae, finibus fermentum libero. Aliquam sed nisi consectetur, posuere metus a, feugiat metus. Mauris consequat nisl risus, non tristique tellus sollicitudin nec. Nulla non libero ipsum. Sed luctus nec risus at eleifend. Integer a scelerisque odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Fusce tincidunt, nibh eget mollis mollis, risus purus finibus orci, vitae elementum mauris libero vel metus. In ut tincidunt massa, quis convallis lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porttitor sed turpis sit amet blandit. Praesent in luctus quam. Cras congue, nisi quis egestas suscipit, leo orci vulputate lorem, vel luctus metus sem a justo. Morbi ac dolor at urna auctor rhoncus eget vel sapien. Fusce condimentum nunc nec faucibus ornare. Sed fringilla magna sit amet turpis cursus maximus. Mauris consectetur porta magna, a blandit neque. Nunc iaculis tristique velit, nec pellentesque lorem bibendum vitae. Aenean eu fringilla turpis. Etiam in interdum magna. Donec sagittis fermentum lorem, ut facilisis nisl ultricies quis. Sed eu ligula sem. Donec tincidunt est sit amet tellus pharetra venenatis.
+
+Etiam lacinia ultricies nisi sit amet placerat. Maecenas lobortis aliquet ante ut efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sed semper ipsum, sit amet dapibus dui. Nam at vulputate velit. Aliquam nisi massa, finibus eget justo eget, venenatis tincidunt est. Aenean ac arcu vel est malesuada eleifend vitae quis lectus. Nulla at elit sed augue pellentesque dictum. Praesent mattis metus ut rutrum venenatis. Mauris a eleifend justo, ac porta dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque tempor rhoncus pretium. Quisque nisi justo, tincidunt a enim ac, hendrerit maximus odio. Donec tempus suscipit nisl a dictum. Proin sollicitudin, lacus in dictum facilisis, magna dui congue urna, nec tempor felis enim at velit. Curabitur fringilla magna at nulla elementum, in facilisis lorem bibendum.
+
+Pellentesque nec est non sapien accumsan pretium. Cras egestas ullamcorper arcu, vitae bibendum odio euismod sed. Aenean tincidunt nibh faucibus, mattis urna nec, sollicitudin mi. Nunc dapibus purus libero, sed maximus dolor dignissim a. Nullam tempus eros vitae dui feugiat, ac elementum urna ullamcorper. Fusce euismod iaculis erat, feugiat euismod velit tempor at. Nam hendrerit posuere enim sit amet molestie."
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</ScrollView>

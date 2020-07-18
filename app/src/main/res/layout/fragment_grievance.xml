@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    tools:context=".fragments.GrievanceFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_zone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/zone"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_zone"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Please Select"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_wards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/ward"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_ward"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Please Select"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/category"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_category"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Please Select"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_sub_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/sub_category"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_sub_category"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Please Select"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/problem"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_problem"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Please Select"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_others"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/other"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/tv_select_others"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:hint="Other"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp"
+                />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_select_photo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/attach_photo_1"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_photo_1"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:padding="4dp"
+                    android:text="Choose File"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_photo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/attach_photo_2"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_photo_2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:padding="4dp"
+                    android:text="Choose File"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_photo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/attach_photo_3"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_select_photo3"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:padding="4dp"
+                    android:text="Choose File"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_select_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/colorAccent"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:text="@string/address"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/tv_address"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/colorGray"
+                    android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                    android:gravity="start"
+                    android:hint="@string/address"
+                    android:lines="4"
+                    android:padding="4dp"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_accent_color"
+                android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/progress_bar" />
+
+</RelativeLayout>

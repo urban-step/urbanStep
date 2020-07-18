@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:context=".fragments.WardDetailFragment">
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/delhi_desc"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view"
+        android:layout_below="@id/tv_description">
+
+        <WebView
+            android:id="@+id/webview_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/tv_know_ward"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="@font/neuzeit_grotesk_w01_regular_0"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="KNOW YOUR WARD"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <include layout="@layout/progress_bar" />
+</RelativeLayout>
